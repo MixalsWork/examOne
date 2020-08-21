@@ -1,0 +1,48 @@
+@font-face 
+    font-family: Aleo-Regular
+    src: url(../fonts/Aleo-Regular.otf)
+.container 
+    max-width: 1110px
+    margin: auto
+.menu
+    background-color: #5474FD
+    padding: 30px 40px
+    &__container 
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__list 
+        display: flex
+        list-style: none
+        text-decoration: none
+        a
+            color:#FFFFFF
+            transition: all ease 0.4s
+    &__item 
+        font-size: 14px
+        font-family: Aleo-Regular
+        text-transform: uppercase
+        padding-right: 41px
+        &:hover a
+            color: black
+        &:last-child
+            padding-right: 0
+        
+@media screen and (max-width: 768px)
+    .menu
+        &__logo
+            display: none
+        &__container
+            justify-content: center
+@media screen and (max-width: 576px)
+    .menu
+        &__list
+            flex-direction: column
+            text-align: center
+        &__item
+            font-size: 25px
+            padding-right: 0
+            padding-bottom: 15px
+            &:last-child
+                padding-bottom: 0
+            

@@ -1,0 +1,48 @@
+@font-face 
+    font-family: JosefinSans-Light
+    src: url(../fonts/JosefinSans-Light.ttf)
+.container 
+    max-width: 1110px
+    margin: auto
+.content
+    &__top
+        background: url(../img/content1.png) no-repeat
+        background-size: cover 
+
+    &__container 
+        font-family: JosefinSans-Light
+        display: flex
+        flex-direction: column
+        padding: 228px 30px 100px 30px
+    &__item
+        max-width: 541px
+        background: rgba(35, 35, 35, 0.9)
+        padding: 51px 32px 50px 31px
+    &__item--left
+        align-self: flex-end    
+    &__title 
+        font-size: 20px
+        color: #E8E8E8
+        padding-bottom: 30px
+    .conent__subtitle 
+        font-size: 20px
+        text-transform: uppercase
+        color: #FFFFFF
+        padding-bottom: 30px
+    &__descr 
+        font-size: 16px
+        color: #E8E8E8
+        padding-bottom: 47px
+    &__button 
+        background: url(../img/button.png) no-repeat
+        background-size: cover
+        padding: 21px 63px
+        font-size: 16px
+        color: #FFFFFF
+        text-transform: uppercase
+        transition: all ease 0.4s
+        &:hover
+            border-radius: 25px
+    &__bot 
+        background: url(../img/content2.png) no-repeat
+        background-size: cover 

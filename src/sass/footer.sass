@@ -1,0 +1,43 @@
+@font-face 
+    font-family: JosefinSans-Regular
+    src: url(../fonts/JosefinSans-Regular.ttf)
+@font-face 
+    font-family: JosefinSans-Light
+    src: url(../fonts/JosefinSans-Light.ttf)
+
+.container 
+    max-width: 1110px
+    margin: auto
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+.footer
+    background-color: #232323
+    padding: 123px 30px 54px 30px
+    &__logo 
+        text-align: center
+    &__title 
+        font-size: 24px
+        color: #FFFFFF
+        font-family: JosefinSans-Regular
+        text-transform: uppercase
+        letter-spacing: 2px
+        padding-bottom: 15px
+
+    &__subtitle 
+        font-size: 16px
+        color: #FFFFFF
+        padding-bottom: 30px
+        font-family: JosefinSans-Light
+
+    &__icon-box 
+        display: flex
+    &__icon 
+        padding-right: 15px
+        svg
+            fill: white
+        &:last-child
+            padding-right: 0
+    &__icon--white
+        fill: white

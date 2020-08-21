@@ -1,0 +1,63 @@
+@font-face 
+    font-family: JosefinSans-Regular
+    src: url(../fonts/JosefinSans-Regular.ttf)
+@font-face 
+    font-family: JosefinSans-Light
+    src: url(../fonts/JosefinSans-Light.ttf)
+@font-face 
+    font-family: Aleo-Regular
+    src: url(../fonts/Aleo-Regular.otf)
+.container 
+    max-width: 1110px
+    margin: auto
+.feedback 
+    background: url(../img/feedback-bg.png) no-repeat
+    background-size: cover
+    padding: 120px 30px 200px 30px
+
+    &__container 
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+    &__title 
+        font-size: 36px
+        color: #FFFFFF
+        font-family: Aleo-Regular
+        padding-bottom: 94px
+    &__item 
+        background-color: #333333
+        display: flex
+        align-items: center
+    &__foto 
+
+    &__text 
+        padding: 51px 54px 48px 61px
+    &__subtitle 
+        font-size: 20px
+        color: #FEFEFE
+        padding-bottom: 33px
+        text-transform: uppercase
+        font-family: JosefinSans-Light
+
+    &__descr 
+        font-size: 16px
+        color: #FEFEFE
+        letter-spacing: 1px
+        font-family: JosefinSans-Light
+
+    &__important 
+        color: #5474FD
+        font-size: 36px
+        font-family: Aleo-Regular
+@media screen and (max-width: 1300px)
+    .feedback
+        &__title
+            text-align: center
+            font-size: 26px
+        &__item
+            flex-direction: column
+            flex-wrap: wrap
+            padding-top: 30px
+            img
+                max-width: 100%

@@ -1,0 +1,75 @@
+@font-face 
+    font-family: JosefinSans-Light
+    src: url(../fonts/JosefinSans-Light.ttf)
+@font-face 
+    font-family: Aleo-Regular
+    src: url(../fonts/Aleo-Regular.otf)
+.container
+    max-width: 1110px
+    margin: auto 
+.explore
+    background: url(../img/bg-2.png) no-repeat
+    background-size: cover
+    padding: 120px 30px
+    &__container 
+        display: flex
+        align-items: center
+        justify-content: space-between
+    &__text 
+        padding-right: 105px
+    &__title 
+        font-size: 36px
+        color: #FFFFFF
+        font-family: Aleo-Regular
+        padding-bottom: 62px
+
+    &__descr 
+        font-size: 16px
+        color: #E8E8E8
+        font-family: JosefinSans-Light
+        letter-spacing: 1px
+        padding-bottom: 47px
+        p
+            padding-bottom: 20px
+            &:last-child
+                padding-bottom: 0
+    &__button 
+        background: url(../img/button.png) no-repeat
+        background-size: cover
+        padding: 21px 38px
+        color: #FFFFFF
+        font-size: 16px
+        font-family: Aleo-Regular
+        text-transform: uppercase
+        letter-spacing: 1px
+        transition: all ease 0.4s
+        &:hover
+            border-radius: 25px
+    &__gallery 
+        display: flex
+        flex-direction: column
+    &__foto
+        transition: all ease 0.4s
+        cursor: pointer 
+        &:first-child
+            margin-right: 125px
+            margin-bottom: 5px
+        &:last-child
+            justify-self: flex-end
+            align-self: flex-end
+        &:hover
+            transform: scale(1.2)
+
+@media screen and (max-width: 576px)
+    .explore
+        &__container
+            flex-direction: column
+        &__text
+            padding-right: 0
+            padding-bottom: 30px
+            display: flex
+            flex-direction: column
+            align-items: center
+        &__foto
+            &:first-child
+                margin-right: 0

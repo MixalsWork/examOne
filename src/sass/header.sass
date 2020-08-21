@@ -1,0 +1,83 @@
+@font-face 
+    font-family: JosefinSans-Regular
+    src: url(../fonts/JosefinSans-Regular.ttf)
+@font-face 
+    font-family: JosefinSans-Light
+    src: url(../fonts/JosefinSans-Light.ttf)
+@font-face 
+    font-family: Aleo-Regular
+    src: url(../fonts/Aleo-Regular.otf)
+.header
+    background: url(../img/header-bg.png) no-repeat 
+    background-size: cover
+    padding-top: 265px
+    padding-bottom: 134px
+    &__container 
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+    &__logo 
+        padding-bottom: 15px
+    &__title 
+        font-family: JosefinSans-Light
+        font-size: 22px
+        color: #FFFFFF
+        font-weight: 100
+        padding-bottom: 49px
+    &__search 
+        width: 651px
+        background-color: #fff
+        display: flex
+        margin-bottom: 120px
+    &__input 
+        flex: 1 1 auto
+        text-align: center
+        font-family: JosefinSans-Light
+        font-size: 14px
+        border: 2px solid transparent
+        transition: all ease 0.3s
+        &:focus
+            border: 2px solid #5474FD
+    &__button 
+        text-transform: uppercase
+        background-color: #5474FD
+        color: white
+        font-size: 14px
+        font-family: Aleo-Regular
+        padding: 21px 17px 19px 37px
+        border: 2px solid white
+        letter-spacing: 2px
+        transition: all ease 0.3s
+        &:hover .header__searching
+            transform: scale(1.4) rotate(140deg)
+    &__searching
+        margin-left: 14px
+        transition: all ease 0.3s
+    &__action 
+        display: flex
+        flex-direction: column
+        font-size: 14px
+        color: #FFFFFF
+        font-family: JosefinSans-Light
+        letter-spacing: 2px
+        cursor: pointer
+        transition: all ease 1s
+        &:hover
+            transform: scale(1.2)
+        &:hover .header__scroll
+            transform: rotate(360deg)
+    &__scroll
+        margin-top: 15px
+        transition: all ease 1s
+.container 
+    max-width: 1110px
+    margin: auto
+@media screen and (max-width: 576px)
+    .header
+        &__search
+            flex-direction: column
+            width: 350px
+        &__input
+            height: 60px
+
