@@ -648,6 +648,14 @@
 .container {
   max-width: 1110px;
   margin: auto;
+}
+
+.footer {
+  background-color: #232323;
+  padding: 123px 30px 54px 30px;
+}
+
+.footer__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -661,11 +669,6 @@
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-}
-
-.footer {
-  background-color: #232323;
-  padding: 123px 30px 54px 30px;
 }
 
 .footer__logo {
@@ -698,16 +701,8 @@
   padding-right: 15px;
 }
 
-.footer__icon svg {
-  fill: white;
-}
-
 .footer__icon:last-child {
   padding-right: 0;
-}
-
-.footer__icon--white {
-  fill: white;
 }
 /*Обнуление*/
 
